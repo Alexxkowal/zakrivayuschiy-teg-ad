@@ -1,33 +1,28 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --content-width: clamp(23.1875rem, 16.035rem + 30.516vw, 43.75rem);
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P-Regular';
+  --font-weight-card-header: 700;
+  --font-weight-card-text: 400;
+  --main-width: clamp(375px, 80%, 700px);
+  --accent-color: #000000;
+  --header-title: clamp(49px, 10.83px + 0.845vw, 65px);
+  --header-text: clamp(14px, 10.83px + 0.845vw, 23px);
+  --background-image:
+  repeating-linear-gradient(to right, 
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ), 
+  repeating-linear-gradient(to bottom, #d3d3d3 0px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
-    --main-font: 'Inter', sans-serif;
-    --accent-font: 'PressStart2P', fantasy;
+  --contour-color: #000000;
+  --core-color: #fff;
+  --main-body-color: #FF0000;
+  --sparks-color: #FF0000;
 
-    --card-title-weight: 700;
-    --card-text-weight: 400;
-
-    --text-color: #000;
-    --button-text-color: #000;
-    --bg-color: #fff;
-    --label-stroke-color: var(--bg-color);
-
-    --contour-color: #000;
-    --animation-fill-color: #FF0000;
-
-    --page-background: repeating-linear-gradient(
-            90deg,
-            #d3d3d3 0 2px,
-            transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-            180deg,
-            #d3d3d3 0 2px,
-            transparent 2px 4px
-    ),
-    linear-gradient(
-            180deg,
-            #e7e7e7 0.01%,
-            #1a1a1a
-    );
+  --stroke-color: #000000;
+  --stroke-width: 1px;
 }
